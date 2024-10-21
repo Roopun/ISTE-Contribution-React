@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 function App() {
   const [userData, setUserData] = useState([]);
@@ -32,6 +33,7 @@ function App() {
       <Header onSubmit={setSearchTerm} />
       <Sidebar />
       <Main userData={filteredUserData} />
+      <Footer />
     </div>
   );
 }
